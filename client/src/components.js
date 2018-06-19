@@ -19,6 +19,12 @@ class TestFetch extends Component {
     return (
       <div>
         <h1>Hello Fetch</h1>
+        { this.state.data.map((data) => (
+            <li key={data.id}>
+              {data.text}
+            </li>
+          )
+        )}
       </div>
     );
   }
